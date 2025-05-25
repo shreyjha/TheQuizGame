@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-box">
+        <div id="game-icon">
+            <h1 id="h11"> QUIZ </h1>
+            <h1 id="h12"> GAME </h1>
+        </div>
+        <div id="play-box">
+            <h3> KEEP CALM, QUIZ AHEAD .. </h3>
+            <div> <a href="#main-box"> GAME ON </a> </div>
+        </div>
+    </div>
+    <div id="main-box">
+        <div id="quiz-box">
+            <div id="quiz-box1">
+                <h2> Play the Quiz Game </h2>
+                <!-- <div id="timer-box">
+                    <h3 id="times-up"> Time Left </h3>
+                    <div id="time-display"> 10 </div>
+                </div> -->
+            </div>
+            <div id="quiz-box2">
+                <h1  id="question"> This is a demo question? </h1>
+
+                <div class="answers">
+                    <input type="radio" id="a" name="options" value="a">
+                    <label for="a"> Demo Answer 1 </label>
+                </div>
+
+                <div class="answers">
+                    <input type="radio" id="b" name="options" value="b">
+                    <label for="b"> Demo Answer 2 </label>
+                </div>
+
+                <div class="answers">
+                    <input type="radio" id="c" name="options" value="c">
+                    <label for="c"> Demo Answer 3 </label>
+                </div>
+
+                <div class="answers">
+                    <input type="radio" id="d" name="options" value="d">
+                    <label for="d"> Demo Answer 4 </label>
+                </div>
+            </div>
+            <div id="quiz-box3">
+                <h3 id="ques-display"> </h3>
+                <button id="btn" onclick="nextQuestion()"> Next </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
