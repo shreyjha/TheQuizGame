@@ -204,7 +204,14 @@ let option4 = document.getElementById("d");
 let quesDisplay = document.getElementById("ques-display");
 let button = document.getElementById("btn");
 
-let quizBox = document.getElementById("quiz-box");
+let btnPlayAgain = document.getElementById("btn-playagain");
+
+let label1 = document.getElementById("label1");
+let label2 = document.getElementById("label2");
+let label3 = document.getElementById("label3");
+let label4 = document.getElementById("label4");
+
+let resutBox = document.getElementById("result-box");
 
 let correct = 0;
 
@@ -237,13 +244,32 @@ const nextQuestion = () => {
         checkCorrect();
 
     if (index+1 == 4) {
-        quizBox.innerText = `Quiz Over, You got ${correct} out of 4!`;
-        quizBox.style.backgroundColor = "white";
-        quizBox.style.display = "flex";
-        quizBox.style.alignItems = "center";
-        quizBox.style.justifyContent = "center";
-        quizBox.style.fontSize = "40px";
-        quizBox.style.textAlign = "center";
+        question.style.display = "none";
+
+        option1.style.display = "none";
+        option2.style.display = "none";
+        option3.style.display = "none";
+        option4.style.display = "none";
+
+        label1.style.display = "none";
+        label2.style.display = "none";
+        label3.style.display = "none";
+        label4.style.display = "none";
+
+        resutBox.style.display = "block";
+        resutBox.style.marginBottom = "12.5%";
+        resutBox.style.marginLeft = "7.5%";
+
+        resutBox.innerText = `Quiz Over, You got ${correct} out of 4!`;
+        resutBox.style.fontSize = "250%";
+        resutBox.style.display = "flex";
+        resutBox.style.justifyContent = "center";
+        resutBox.style.alignItems = "center";
+
+        quesDisplay.style.display = "none";
+        button.style.display = "none";
+
+        btnPlayAgain.style.display = "block";
     }
 
     option1.checked = false;
@@ -287,4 +313,30 @@ const checkCorrect = () => {
             return;
         }
     }
+}
+
+const restartQuiz = () => {
+    index = 0;
+    quizGame.sort(() => Math.random() - 0.5);
+    btnPlayAgain.style.display = "none";
+    quesDisplay.style.display = "block";
+    button.style.display = "block";
+    correct = 0;
+    button.innerText = "Next";
+
+    resutBox.style.display = "none";
+
+    question.style.display = "block";
+
+    option1.style.display = "block";
+    option2.style.display = "block";
+    option3.style.display = "block";
+    option4.style.display = "block";
+
+    label1.style.display = "block";
+    label2.style.display = "block";
+    label3.style.display = "block";
+    label4.style.display = "block";
+
+    loadQuestion();
 }

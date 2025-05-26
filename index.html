@@ -9,8 +9,8 @@
 <body>
     <div id="start-box">
         <div id="game-icon">
-            <h1 id="h11"> QUIZ </h1>
-            <h1 id="h12"> GAME </h1>
+            <h1 id="h11"> QUIZZ </h1>
+            <h1 id="h12"> GAMEE </h1>
         </div>
         <div id="play-box">
             <h3> KEEP CALM, QUIZ AHEAD .. </h3>
@@ -31,27 +31,31 @@
 
                 <div class="answers">
                     <input type="radio" id="a" name="options" value="a">
-                    <label for="a"> Demo Answer 1 </label>
+                    <label id="label1" for="a"> Demo Answer 1 </label>
                 </div>
 
                 <div class="answers">
                     <input type="radio" id="b" name="options" value="b">
-                    <label for="b"> Demo Answer 2 </label>
+                    <label id="label2" for="b"> Demo Answer 2 </label>
                 </div>
 
                 <div class="answers">
                     <input type="radio" id="c" name="options" value="c">
-                    <label for="c"> Demo Answer 3 </label>
+                    <label id="label3" for="c"> Demo Answer 3 </label>
                 </div>
 
                 <div class="answers">
                     <input type="radio" id="d" name="options" value="d">
-                    <label for="d"> Demo Answer 4 </label>
+                    <label id="label4" for="d"> Demo Answer 4 </label>
                 </div>
+
+                <div id="result-box"></div>
             </div>
             <div id="quiz-box3">
                 <h3 id="ques-display"> </h3>
                 <button id="btn" onclick="nextQuestion()"> Next </button>
+
+                <button id="btn-playagain" onclick="restartQuiz()"> PLAY AGAIN </button>
             </div>
         </div>
     </div>
