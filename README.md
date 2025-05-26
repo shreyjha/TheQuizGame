@@ -24,10 +24,4 @@ To run this project locally:
    ```bash
    git clone <repository-url>
 
-## Future Improvements
-To enhance the quiz experience, here are some of my planned upgrades:
-
-- **Timed Quizzes** – To introduce a countdown timer for each question to add a challenge.
-- **Theme Customization** – To offer multiple theme options for a personalized experience.
-
 # Enough reading, now its time to challenge yourself, test your computer science fundamentals knowledge, and level up your skills - let the quiz begin!!
