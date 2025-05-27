@@ -13,10 +13,9 @@ This is a simple quiz game built using HTML, CSS, and JavaScript. It allows user
 - JavaScript for dynamic interactions and logic
 
 ## How to Play
-1. Open `index.html` in a browser.
-2. Select the answers for each question as per your knowledge.
-3. View your score at the end of the quiz.
-4. Refresh to play again!
+1. Select the answers for each question as per your knowledge.
+2. View your score at the end of the quiz.
+3. Click on play again button to play again!
 
 ## Installation
 To run this project locally:
